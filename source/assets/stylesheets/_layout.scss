@@ -1,0 +1,39 @@
+body {
+  margin: 0 auto;
+  display: block;
+  max-width: 56rem;
+  padding-left: 2em;
+  padding-right: 2em;
+
+  &::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+}
+
+.site_header_container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site_header_logo {
+  font-size: $base-font-size;
+}
+
+.site_header_nav {
+  ul {
+    padding-left: 0;
+
+    li {
+      display: inline;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<section class="writing_container">
+  hello
+  <% blog.articles.each do |article| %>
+    <article>
+      <h1 class="article_title">
+        <a href="<%= article.url %>">
+          <%= article.title %>
+        </a>
+      </h1>
+
+      <h3 class="article_date">
+        <%= article.date %>
+      </h3>
+
+      <%= article.summary %>
+
+    </article>
+  <% end %>
+</section>

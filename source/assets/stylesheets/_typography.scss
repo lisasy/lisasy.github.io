@@ -1,0 +1,40 @@
+$tf_serif: "adobe-caslon-pro", "georgia", serif;
+$tf_sans_serif: "nimbus-sans", "helvetica", sans-serif;
+
+// Sizing
+$base_font_size: 18pt;
+$base_line_height: 1.35;
+$base_leading: $base_line_height;
+$scale: 1.414;
+
+// Color
+$color_base: #0F1311;
+$color_secondary: #444947;
+$color_accent: yellow;
+$color_accent_secondary: #24fde4;
+
+html {
+  -webkit-font-smoothing: antialiased;
+  color: $color_base;
+  font-family: $tf_sans_serif;
+  font-size: $base_font_size;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  // color: $color_accent;
+  color: $color_base;
+  text-decoration: none;
+  transition: all 0.25s ease-in;
+  background: yellow;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-bottom: 4px solid $color_base;
+
+  &:hover {
+    background: $color_accent_secondary;
+    // color: $color_accent_secondary;
+    // text-decoration: underline;
+  }
+}
+

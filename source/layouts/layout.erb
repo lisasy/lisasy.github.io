@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>thoughtbot Middleman Template</title>
+    <title>Lisa Sy</title>
     <%= stylesheet_link_tag "main" %>
+    <link rel="stylesheet" href="https://use.typekit.net/kzz1ltd.css">
   </head>
+
   <body>
-    <main role="main">
+    <%= partial "partials/header" %>
+    <main role="site_container">
       <%= yield %>
     </main>
     <%= partial "partials/analytics" %>
   </body>
+
 </html>

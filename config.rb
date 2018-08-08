@@ -16,6 +16,15 @@ set :markdown,
   tables: true,
   with_toc_data: true
 set :markdown_engine, :redcarpet
+set :relative_links, true
+activate :i18n
+
+activate :blog do |writing|
+  writing.layout = "layout"
+  writing.prefix = "writing"
+  writing.sources = "/articles/:year/:title.html"
+  writing.permalink = "/:year/:title.html"
+end
 
 page "/*.json", layout: false
 page "/*.txt", layout: false
