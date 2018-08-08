@@ -1,9 +1,8 @@
 body {
   margin: 0 auto;
   display: block;
+  padding: 2em;
   max-width: 56rem;
-  padding-left: 2em;
-  padding-right: 2em;
 
   &::after {
     clear: both;
@@ -36,4 +35,14 @@ body {
       }
     }
   }
+}
+
+.writing_container article {
+  margin: 0 auto;
+  width: 32rem;
+}
+
+img {
+  height: auto;
+  width: 100%;
 }

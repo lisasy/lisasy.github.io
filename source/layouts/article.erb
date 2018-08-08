@@ -1,0 +1,18 @@
+<% wrap_layout :layout do %>
+  <section class="writing_container">
+    <article>
+      <h1 class="article_title">
+        <%= current_article.title %>
+      </h1>
+
+      <h3 class="article_date">
+        <%= format_date(current_article.date) %>
+      </h3>
+
+      <%= yield %>
+
+      <a href="/writing">See other writing</a>
+
+    </article>
+  </section>
+<% end %>

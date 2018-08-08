@@ -29,11 +29,18 @@ end
 page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
+page "/writing/*", layout: "article"
 
 configure :development do
   activate :livereload do |reload|
     reload.no_swf = true
   end
+end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.build_before = true
+  deploy.branch = "master"
 end
 
 configure :production do
@@ -42,4 +49,10 @@ configure :production do
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
+end
+
+helpers do
+  def format_date(date)
+    date.strftime("%B %e, %Y")
+  end
 end
