@@ -1,0 +1,43 @@
+@mixin flex_gutter() {
+  max-width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+
+  @include media_tablet_portrait() {
+    margin: 0 auto 2em;
+    max-width: 56em;
+  }
+}
+
+@mixin flex_display() {
+  display: block;
+
+  @include media_tablet_portrait() {
+    display: flex;
+  }
+}
+
+@mixin no_flex_display() {
+  display: block;
+}
+
+@mixin flex_height_display() {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  @include media_tablet_portrait() {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+@mixin flex_weight_display() {
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include media_tablet_portrait() {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}

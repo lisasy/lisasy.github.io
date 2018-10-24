@@ -1,0 +1,161 @@
+/* ui & visual structure */
+.card_container {
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  border-radius: 12px;
+  height: 240px;
+  width: 100%;
+  margin: 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+
+  @include media_tablet_portrait() {
+    height: 327px;
+  }
+}
+
+.card_container_content {
+  padding: 1em;
+}
+
+.card_source {
+  font-weight: 600;
+  margin-bottom: 0;
+
+  @include media_tablet_portrait() {
+    display: inline-block;
+    border-bottom: 3px solid;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+.card_title {
+  color: white;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card_subtitle {
+  font-weight: 400;
+  margin-top: 0.25em;
+}
+
+.card_nav_text {
+  @include media_tablet_portrait() {
+    visibility: hidden;
+    font-weight: 800;
+    display: block;
+  }
+  @include media_tablet_portrait() { 
+    // margin-top: 2em;
+  }
+}
+
+.set_a {
+  background-color: #674AA0;
+
+  .card_source {
+    color: #BBA6E4;
+  }
+
+  .card_title {
+    color: white;
+  }
+
+  .card_subtitle {
+    color: #BBA6E4;
+  }
+}
+
+.set_b {
+  background-color: #24FDE4;
+
+  .card_source {
+    color: #133F96;
+  }
+
+  .card_title {
+    color: #133F96;
+  }
+
+  .card_subtitle {
+    color: #133F96;
+  }
+}
+
+.set_c {
+  background-color: #F2E953;
+
+  .card_source {
+    color: #EB7A6A;
+  }
+
+  .card_title {
+    color: #EB7A6A;
+  }
+
+  .card_subtitle {
+    color: #EB7A6A;
+  }
+}
+
+.set_d {
+  background-color: #EB7A6A;
+
+  .card_source {
+    color: #F2E953;
+  }
+
+  .card_title {
+    color: #F2E953;
+  }
+
+  .card_subtitle {
+    color: #F2E953;
+  }
+}
+
+/* ux & interactive */
+.card_link {
+  padding: 0;
+  background: none;
+  display: block;
+  text-decoration: none;
+}
+
+.card_link:hover {
+  text-decoration: none;
+
+  .card_container_content {
+    @include media_tablet_portrait() {
+      align-items: flex-end;
+      transform: translateY(-0.5em);
+      transition: all 0.25s ease-in-out;
+    }
+
+    .card_source,
+    .card_title,
+    .card_subtitle {
+      color: #24FDE4;
+    }
+
+    .card_nav_text {
+      transition: all 0.25s ease-in-out;
+      visibility: visible;
+      color: #24FDE4;
+      color: #24FDE4;
+      text-align: center;
+      margin-top: 2em;
+    }
+  }
+}
+
+.card_container {
+  transition: 0.25s;
+
+  &:hover {
+    background-color: black;
+  }
+}

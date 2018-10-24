@@ -1,20 +1,5 @@
-$tf_serif: "adobe-caslon-pro", "georgia", serif;
-$tf_sans_serif: "nimbus-sans", "helvetica", sans-serif;
-
-// Sizing
-$base_font_size: 18pt;
-$base_line_height: 1.35;
-$base_leading: $base_line_height;
-$scale: 1.414;
-
-// Color
-$color_base: #0F1311;
-$color_secondary: #444947;
-$color_accent: yellow;
-$color_accent_secondary: #24fde4;
-
 html {
-  -webkit-font-smoothing: antialiased;
+ -webkit-font-smoothing: antialiased;
   color: $color_base;
   font-family: $tf_sans_serif;
   font-size: $base_font_size;
@@ -23,19 +8,74 @@ html {
 }
 
 a {
-  // color: $color_accent;
-  color: $color_base;
-  text-decoration: none;
-  transition: all 0.25s ease-in;
-  background: yellow;
-  padding-left: 4px;
-  padding-right: 4px;
-  border-bottom: 4px solid $color_base;
+  @include link_base_style();
+}
 
-  &:hover {
-    background: $color_accent_secondary;
-    // color: $color_accent_secondary;
-    // text-decoration: underline;
+
+h1 {
+  font-family: $tf_serif;
+  font-size: $base_font_size * 1.25;
+
+  @include media_tablet_portrait() {
+    font-size: $base_font_size * 2;
+    line-height: 1.3;
   }
 }
 
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25em;
+}
+
+ul.styled {
+  padding-left: 2em;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: 1em;
+
+    &::before {
+      content: "—";
+      color: #777;
+      position: absolute;
+      left: -2em;
+    }
+  }
+}
+
+ol {
+  padding-left: 0;
+  list-style-type: none;
+
+  li::before {
+    font-weight: 400;
+    color: #777;
+    padding-right: 1em;
+    content: counter(my-counter);
+  }
+
+  li {
+    counter-increment: my-counter;
+    display: flex;
+    margin-bottom: 1em;
+  }
+}
+
+@mixin header_title_h3 {
+  font-weight: 800;
+  display: inline-block;
+  border-bottom: 3px solid;
+  padding-bottom: 1em;
+}
+
+.header_title_h3 {
+  @include header_title_h3();
+}

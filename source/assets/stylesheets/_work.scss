@@ -1,0 +1,130 @@
+.work_section_container {
+  @include flex_gutter();
+  @include flex_display();
+}
+
+.project_container.content_warnings {
+  .project_header {
+
+    background: url(/assets/images/work/fb_content_warnings/header_bg.png) center center no-repeat;
+    background-size: cover;
+    min-height: 320px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 1em;
+
+    @include media_tablet_portrait() {
+      min-height: 75vh;
+      margin-top: 1em;
+      margin-bottom: 160px;
+    }
+
+    .project_header_content {
+      align-self: center;
+      background: #fff8f8;
+      color: black;
+      padding: 1em;
+      margin: 1em;
+
+      @include media_tablet_portrait() {
+        margin: 0;
+        padding: 2em;
+        position: absolute;
+        left: 2em;
+        right: 2em;
+        bottom: -160px;
+      }
+
+      @include media_tablet_landscape() {
+        left: 8em;
+        right: 8em;
+        bottom: -160px;
+      }
+
+      @include media_desktop() {
+        padding: 3em;
+        left: 12em;
+        right: 12em;
+        bottom: -160px;
+      }
+
+      .project_sourceline,
+      .project_title {
+        margin: 0;
+      }
+
+      .project_sourceline {
+        color: #777;
+        font-size: 16pt;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.background_subline {
+  font-size: 32pt;
+}
+
+.work_section_title {
+  @include header_title_h3();
+}
+
+.work_section {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  &.col_full {
+    .col {
+      margin: 0 auto 2em;
+      @include media_tablet_landscape() {
+        width: 28rem;
+      }
+
+      @include media_desktop() {
+        width: 30rem;
+      }
+    }
+  }
+
+  &.col_full_stretch {
+    .col {
+      margin: 0 auto 2em;
+      width: 100%;
+    }
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  figcaption {
+    color: #777;
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  &.no_margin {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+hr {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 120px;
+  text-align: center;
+  border: 2px solid $color-base;
+}
+
+.work_section.no_margin.gif {
+  figure {
+    width: 360px;
+    margin: 0 auto;
+  }
+}

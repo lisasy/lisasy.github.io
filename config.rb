@@ -20,27 +20,31 @@ set :relative_links, true
 activate :i18n
 
 activate :blog do |writing|
-  writing.layout = "layout"
+  writing.name = "writing"
   writing.prefix = "writing"
+  writing.layout = "layout"
   writing.sources = "/articles/:year/:title.html"
   writing.permalink = "/:year/:title.html"
+end
+
+activate :blog do |work|
+  work.name = "work"
+  work.prefix = "work"
+  work.layout = "layout"
+  work.sources = "/work_items/:title.html"
+  work.permalink = "/:title.html"
 end
 
 page "/*.json", layout: false
 page "/*.txt", layout: false
 page "/*.xml", layout: false
 page "/writing/*", layout: "article"
+page "/work/*", layout: "work_project"
 
 configure :development do
   activate :livereload do |reload|
     reload.no_swf = true
   end
-end
-
-activate :deploy do |deploy|
-  deploy.deploy_method = :git
-  deploy.build_before = true
-  deploy.branch = "master"
 end
 
 configure :production do

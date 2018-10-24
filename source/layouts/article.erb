@@ -1,15 +1,25 @@
 <% wrap_layout :layout do %>
   <section class="writing_container">
-    <article>
-      <h1 class="article_title">
-        <%= current_article.title %>
-      </h1>
+    <article class="article_container">
+      <header class="article_header">
+        <div class="article_header_content">
+          <h3 class="article_date">
+            <%= format_date(current_article.date) %>
+          </h3>
+          <h1 class="article_title">
+            <%= current_article.title %>
+          </h1>
+          <h3 class="article_subtitle">
+            <%= current_article.data["subtitle"] %>
+          </h3>
+        </div>
+      </header>
 
-      <h3 class="article_date">
-        <%= format_date(current_article.date) %>
-      </h3>
+      <hr>
 
-      <%= yield %>
+      <div class="article_body_content">
+        <%= yield %>
+      </div>
 
       <a href="/writing">See other writing</a>
 

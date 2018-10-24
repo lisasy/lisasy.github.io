@@ -4,16 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Lisa Sy</title>
+    <title>Lisa Sy | Designer & Artist</title>
     <%= stylesheet_link_tag "main" %>
-    <link rel="stylesheet" href="https://use.typekit.net/kzz1ltd.css">
+    <%= favicon_tag "/assets/images/favicon.ico" %>
+    <link rel="stylesheet" href="https://use.typekit.net/fjj2fpt.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30331708-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-30331708-1');
+    </script>
   </head>
 
-  <body>
+  <body class="body_container_margin">
     <%= partial "partials/header" %>
     <main role="site_container">
       <%= yield %>
     </main>
+    <%= partial "partials/footer" %>
     <%= partial "partials/analytics" %>
   </body>
 

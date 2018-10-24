@@ -1,7 +1,48 @@
+---
+layout: "layout_no_margin"
+---
+
 <section class="index_container">
-  <h2> 
-    Hello, I am a digital product designer and <a href="http://instagram.com/lisasyart" target="_blank">illustrator</a> <br> based in Oakland, California.
-  </h2>
-  <h3>Formerly at <a href="http://facebook.com" target="_blank">Facebook</a> and <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>.</h3>
-  <h3>Availability: Open for contract positions starting in November 2018</h3>
+
+  <article class="index_section_container">
+    <div class="col_primary">
+      <h1 class="index_site_header"> 
+        Crafting products, experiences, and stories using design and illustration.
+      </h1>
+      <p>
+        Hello, I am a interdisciplinary digital designer and illustrator
+        based in the San Francisco Bay Area in California.
+        Formerly at <a href="http://facebook.com" target="_blank">Facebook</a>
+        and <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>, I'm currently seeking contract opportunities, and open to full-time opportunities for the right role.
+      </p>
+      <!-- <p> -->
+      <!--   <a href="/" class="button_primary">View Resume</a> -->
+      <!--   <a href="/" class="button_secondary">Contact Me</a> -->
+      <!-- </p> -->
+    </div>
+    <div class="col_secondary">
+      <figure>
+        <img src="/assets/images/about/about.png" />
+      </figure>
+    </div>
+  </article>
+
+
+  <article class="index_section_container highlight col" id="work">
+    <%= partial "partials/featured_work" %>
+  </article>
+
+  <article class="index_section_container quotation">
+    <figure>
+      <blockquote>
+        The precise role of the artist, then, is to illuminate that darkness,
+        blaze roads through that vast forest, so that we will not, in all our
+        doing, lose sight of its purpose, which is, after all, to make the
+        world a more human dwelling place.
+      </blockquote>
+      <figcaption>
+        James Baldwin
+      </figcaption>
+  </article>
+
 </section>

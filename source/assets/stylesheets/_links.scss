@@ -1,0 +1,19 @@
+@mixin link_base_style() {
+  text-decoration: underline;
+  transition: all 0.25s ease-in;
+  color: $link_color;
+
+  &:hover {
+    color: $link_hover_color;
+  }
+}
+
+@mixin link_secondary_style() {
+  font-size: 14pt;
+  color: #777;
+  text-decoration: none;
+
+  &:hover {
+    color: $link_color;
+  }
+}

@@ -1,0 +1,18 @@
+$tf_serif: "le-monde-livre-std", "georgia", serif;
+$tf_sans_serif: "nimbus-sans", "helvetica", sans-serif;
+
+// Sizing
+$base_font_size: 15pt;
+$base_line_height: 1.55;
+$base_leading: $base_line_height;
+$scale: 1.414;
+
+// Color
+$color_base: #0F1311;
+$color_secondary: #444947;
+$color_accent: #c14e3c;
+$color_accent_secondary: #b03522;
+
+// Mapping Variables
+$link_color: $color_accent;
+$link_hover_color: $color_accent_secondary;
