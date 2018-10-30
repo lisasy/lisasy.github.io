@@ -15,16 +15,18 @@ layout: "work_project"
 <div class="work_section overview col_full">
   <div class="col">
     <p>
-From 2015-2017, I led the product design to develop content warnings on
-Facebook to help people deal with unexpected, sensitive content that they
-encounter on Facebook. I understood, strategized, and collaborated with an
-interdisciplinary team to weigh different considerations and capacities from
-Facebook’s Policy and Machine-Learning team, to our international research
-team, with implementing an experience that would best solve our community’s
-needs. I also presented the strategy and design directly to Mark Zuckerberg to
-receive his feedback and guidance. <strong>Today, the content warning is accessible on
-all platforms (web, iOS, Android) to 100% of Facebook’s global market, viewable
-most popularly on the News Feed.</strong>
+      From 2015-2017, I led the product design to develop content warnings on
+      Facebook to help people deal with unexpected, sensitive content that they
+      encounter on Facebook. I understood, strategized, and collaborated with
+      an interdisciplinary team to weigh different considerations and
+      capacities from Facebook’s Policy and Machine-Learning team, to our
+      international research team, with implementing an experience that would
+      best solve our community’s needs. I also presented the strategy and
+      design directly to Mark Zuckerberg to receive his feedback and guidance.
+      <strong>Today, the content warning is accessible on all platforms (web,
+      iOS, Android) to 100% of Facebook’s global market, viewable most
+      popularly on the News Feed. <u>It resulted in higher sentiment and decreased
+      reporting of negative content on Facebook.</u></strong>
     </p>
   </div>
 </div>
@@ -33,7 +35,7 @@ most popularly on the News Feed.</strong>
 <div class="work_section no_margin col_full_stretch">
   <div class="col">
     <figure>
-      <img src="/assets/images/work/fb_content_warnings/launch.png" />
+      <img src="/assets/images/work/fb_content_warnings/project_overview.png" />
     </figure>
   </div>
 </div>
@@ -44,27 +46,29 @@ most popularly on the News Feed.</strong>
       Understanding the Problem
     </h5>
     <h2>
-    When people go onto Facebook and unexpectedly encounter sensitive content, it
-    is a jarring experience that bothers them.
+      When people go onto Facebook and unexpectedly encounter sensitive
+      content, it is a jarring experience that bothers them.
 		</h2>
 		<p>
-    Sometimes, seeing this graphic content without any warnings triggers past
-    trauma. Other times, it results in pure embarassment if they’re browsing
-    Facebook in public. <strong>In the inevitable situation where Facebook can’t
-    proactively remove potentially offensive or suggestive content, how can we
-    offer a remediary experience?</strong>
+      Sometimes, seeing this graphic content without any warnings triggers past
+      trauma. Other times, it results in pure embarassment if they’re browsing
+      Facebook in public. <strong>In the inevitable situation where Facebook
+      can’t proactively remove potentially offensive or suggestive content, how
+      can we offer a remediary experience?</strong>
     </p>
 		<p>
-Employing the jobs-to-be-done approach to UX design and research, I sought to
-understand what the community did <strong>today</strong> to deal with the
-issues they encountered. Working with my team’s data scientist, we noted that
-the high volume of reported content indicated that people were emboldened to
-take action on such content. Although about 2.9% of content viewed on Facebook
-are sexually suggestive, non-policy-violating, only about 0.07% of sexual/nude
-content viewed on Facebook violate its policy.
+      Employing the jobs-to-be-done approach to UX design and research, I
+      sought to understand what the community did <strong>today</strong> to
+      deal with the issues they encountered. Working with my team’s data
+      scientist, we noted that the high volume of reported content indicated
+      that people were emboldened to take action on such content. Although
+      about 2.9% of content viewed on Facebook are sexually suggestive,
+      non-policy-violating, only about 0.07% of sexual/nude content viewed on
+      Facebook violate its policy.
 		</p>
 		<p>
-		If not all of this content can be removed, <strong>what more can we do?</strong>
+      If not all of this content can be removed, <strong>what more can we
+      do?</strong>
 		</p>
   </div>
 </div>
@@ -75,10 +79,10 @@ content viewed on Facebook violate its policy.
       The Crux
     </h5>
     <h2>
-      When people share content on Facebook, it is an
-  expression of their values, identity, and personhood online. Moderating content
-  on Facebook is not only about aiding the needs of the viewer, but also
-  respecting the freedom of expression for the poster.
+      When people share content on Facebook, it is an expression of their
+      values, identity, and personhood online. Moderating content on Facebook
+      is not only about aiding the needs of the viewer, but also respecting the
+      freedom of expression for the poster.
     </h2>
   </div>
 </div>
@@ -119,38 +123,72 @@ content viewed on Facebook violate its policy.
   </div>
 </div>
 
-<div class="work_section col_6 align_center">
+<hr>
+
+<div class="work_section col_full highlight align_center">
   <div class="col">
     <h2>
       Defining Our Principles
     </h2>
-		<p>
+    <p class="special_paragraph">
       In order to guide the team to make decisions around these complex
       considerations, I collaborated with my team's content strategist to
       brainstorm and design product principles:
-		</p>
+    </p>
 
-		<p>
-			<ol>
-			  <li>
+    <article class="list_item">
+      <div class="list_counter">
+        <h5 class="list_counter_value">
+          01
+        </h5>
+      </div>
+      <div class="list_content">
+        <h4 class="list_content_title">
+          Clarity
+        </h4>
+        <p class="list_content_description">
           Communicate to users that this content is concealed, and why.
-        </li>
-        <li>
+        </p>
+      </div>
+    </article>
+
+    <article class="list_item">
+      <div class="list_counter">
+        <h5 class="list_counter_value">
+          02
+        </h5>
+      </div>
+      <div class="list_content">
+        <h4 class="list_content_title">
+          Control
+        </h4>
+        <p class="list_content_description">
           Give affordance for users to cover and uncover this photo/video.
-        </li>
-        <li>
-        If the content warning is connected to a user setting, then give users the
-        option to flag this content warning as a false positive or to edit their user
-        settings.
-        </li>
-			</ol>
-		</p>
+        </p>
+      </div>
+    </article>
+
+    <article class="list_item">
+      <div class="list_counter">
+        <h5 class="list_counter_value">
+          03
+        </h5>
+      </div>
+      <div class="list_content">
+        <h4 class="list_content_title">
+          Voice
+        </h4>
+        <p class="list_content_description">
+          If the content warning is connected to a user setting, then give
+          users the option to flag this content warning as a false positive
+          or to edit their user settings.
+        </p>
+      </div>
+    </article>
   </div>
-  <div class="col">
-    <figure>
-      <img src="/assets/images/work/fb_content_warnings/brainstorming.png" />
-    </figure>
-  </div>
+  <figure>
+    <img src="/assets/images/work/fb_content_warnings/principles.png" />
+  </figure>
 </div>
 
 <div class="work_section col_full">
@@ -176,7 +214,7 @@ content viewed on Facebook violate its policy.
 <div class="work_section no_margin col_full_stretch">
   <div class="col">
     <figure>
-      <img src="/assets/images/work/fb_content_warnings/exploration_breadth.png" />
+      <img src="/assets/images/work/fb_content_warnings/breadth.png" />
     </figure>
   </div>
 </div>
@@ -256,7 +294,7 @@ content viewed on Facebook violate its policy.
 <div class="work_section col_full">
   <div class="col">
     <h2>
-    Iterating After Mark Zuckerberg's Feedback
+      Iterating After Mark Zuckerberg's Feedback
     </h2>
 		<p>
       After the review with Mark, I continued to iterate on my content
@@ -267,7 +305,10 @@ content viewed on Facebook violate its policy.
       problem-solving and investigation.
 		</p>
 		<p>
-		  With <strong>content warnings</strong>, I iterated upon developing a modular, flexible content warning that can support the right messaging for our community. I worked closely with the content strategist and with policy to gather their feedback and needs.
+      With <strong>content warnings</strong>, I iterated upon developing a
+      modular, flexible content warning that can support the right messaging
+      for our community. I worked closely with the content strategist and with
+      policy to gather their feedback and needs.
 		</p>
   </div>
 </div>
@@ -275,7 +316,7 @@ content viewed on Facebook violate its policy.
 <div class="work_section no_margin col_full_stretch">
   <div class="col">
     <figure>
-      <img src="/assets/images/work/fb_content_warnings/iteration_cw.png" />
+      <img src="/assets/images/work/fb_content_warnings/exploration_warnings.png" />
     </figure>
   </div>
 </div>
@@ -285,10 +326,17 @@ content viewed on Facebook violate its policy.
 <div class="work_section col_full">
   <div class="col">
 		<p>
-		With <strong>Settings</strong>, I continued to explore what a community-moderated content preference settings might look like on Facebook. Gathering the known requirements from the Policy and our Engineering team, we explored and focused in on three possible directions that we needed to validate and understand better.
+    With <strong>Settings</strong>, I continued to explore what a
+    community-moderated content preference settings might look like on
+    Facebook. Gathering the known requirements from the Policy and our
+    Engineering team, we explored and focused in on three possible directions
+    that we needed to validate and understand better.
 		</p>
 		<p>
-		  How do people feel about their "community" helping moderate content that they see on Facebook? What do people even consider to be flagrant content? We had a lot of hypotheses but not enough clear evidence, especially at a global scale. Thus, we set out on a research trip.
+      How do people feel about their "community" helping moderate content that
+      they see on Facebook? What do people even consider to be flagrant
+      content? We had a lot of hypotheses but not enough clear evidence,
+      especially at a global scale. Thus, we set out on a research trip.
 		</p>
   </div>
 </div>
@@ -296,7 +344,7 @@ content viewed on Facebook violate its policy.
 <div class="work_section no_margin col col_2">
   <div class="work_section_body_container">
     <figure>
-      <img src="/assets/images/work/fb_content_warnings/intl_res_settings.png" />
+      <img src="/assets/images/work/fb_content_warnings/exploration_settings_1.png" />
     </figure>
   </div>
 </div>
@@ -344,6 +392,8 @@ content viewed on Facebook violate its policy.
   </div>
 </div>
 
+<hr>
+
 <div class="work_section col_6 align_center">
   <div class="col">
     <figure>
@@ -357,9 +407,9 @@ content viewed on Facebook violate its policy.
       focus group discussions), and quantitative (usability testing).
     </p>
     <p>
-    For the individual research sessions, we talked with each participant for
-    about 2 hours. In total, we spoke directly with 200 people spanning four
-    continents.
+      For the individual research sessions, we talked with each participant for
+      about 2 hours. In total, we spoke directly with 200 people spanning four
+      continents.
     </p>
   </div>
 </div>
@@ -370,7 +420,8 @@ content viewed on Facebook violate its policy.
   <div class="col">
     <h2>Key Takeaways</h2>
     <p> 
-      After two intensive weeks of international research, we came away with these key takeaways:
+      After two intensive weeks of international research, we came away with
+      these key takeaways:
     </p>
     <p>
       <ul class="styled">
@@ -406,7 +457,9 @@ content viewed on Facebook violate its policy.
 <div class="work_section no_margin col_full_stretch">
   <div class="col">
     <figure>
-      <img src="/assets/images/work/fb_content_warnings/iteration_settings.png" />
+      <img
+      src="/assets/images/work/fb_content_warnings/exploration_settings_2.png"
+      />
     </figure>
   </div>
 </div>
@@ -416,19 +469,29 @@ content viewed on Facebook violate its policy.
 <div class="work_section col_full">
   <div class="col">
     <h2>
-      Shipping and launching!
+      The final push
     </h2>
     <p> 
-      Duirng the next few weeks after the research session, I worked with my team to execute on our launch plan for our MVP. Taking into consideration the: 1) deadline, 2) legal and technical possibilities, and 3) necessary features to solve our core user problem, we worked through all of the implementation details, from the UI/UX design, to meeting policy and legal requirements, to working closely with our marketing and communication partnerships.
+      During the next few weeks after the research session, I worked with my
+      team to execute on our launch plan for our MVP. Taking into consideration
+      the: 1) deadline, 2) legal and technical possibilities, and 3) necessary
+      features to solve our core user problem, we worked through all of the
+      implementation details, from the UI/UX design, to meeting policy and
+      legal requirements, to working closely with our marketing and
+      communication partnerships.
     </p>
-    <p><strong>In April 2017, the content warning launched to all platforms (web, iOS, Android) to 100% of Facebook’s global market, viewable most popularly on the News Feed.</strong></p>
+    <h2>
+      <strong>In April 2017, the content warning launched to all platforms
+      (web, iOS, Android) to 100% of Facebook’s global market, viewable most
+      popularly on the News Feed.</strong>
+    </h2>
   </div>
 </div>
 
 <div class="work_section no_margin col_full_stretch">
   <div class="col">
     <figure>
-      <img src="/assets/images/work/fb_content_warnings/launch.png" />
+      <img src="/assets/images/work/fb_content_warnings/project_overview.png" />
     </figure>
   </div>
 </div>

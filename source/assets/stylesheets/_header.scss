@@ -7,12 +7,19 @@
 .body_container_margin {
   .site_header_container {
     @include flex_gutter();
+    margin-bottom: 1em;
+    @include media_tablet_portrait() {
+      margin-bottom: 1em;
+    }
   }
 }
 
 .body_container_no_margin {
   .site_header_container {
     @include flex_gutter();
+    @include media_tablet_portrait() {
+      margin-bottom: 1em;
+    }
   }
 }
 

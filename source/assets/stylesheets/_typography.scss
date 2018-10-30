@@ -79,3 +79,16 @@ ol {
 .header_title_h3 {
   @include header_title_h3();
 }
+
+hr {
+  border: 2px solid $color-base;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-align: center;
+  width: 120px;
+
+  @include media_tablet_portrait() {
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+}

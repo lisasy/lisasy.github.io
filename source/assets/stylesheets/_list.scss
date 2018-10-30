@@ -1,0 +1,24 @@
+.list_item {
+  @include flex_display();
+  align-items: baseline;
+
+  .list_counter {
+    min-width: 64px;
+  }
+
+  .list_counter_value {
+    font-size: 16pt;
+    font-weight: 200;
+    margin: 0;
+    opacity: 0.5;
+  }
+
+  .list_content_title {
+    margin-top: 0;
+  }
+
+  .list_content_description {
+    font-size: 14pt;
+    margin-top: 0;
+  }
+}

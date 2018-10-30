@@ -3,11 +3,8 @@
   @include flex_display();
 }
 
-.project_container.content_warnings {
+.project_container {
   .project_header {
-
-    background: url(/assets/images/work/fb_content_warnings/header_bg.png) center center no-repeat;
-    background-size: cover;
     min-height: 320px;
     width: 100%;
     position: relative;
@@ -44,8 +41,8 @@
 
       @include media_desktop() {
         padding: 3em;
-        left: 12em;
-        right: 12em;
+        left: 14em;
+        right: 14em;
         bottom: -160px;
       }
 
@@ -60,6 +57,13 @@
         font-weight: 400;
       }
     }
+  }
+}
+
+.project_container.content_warnings {
+  .project_header {
+    background: url(/assets/images/work/fb_content_warnings/header_bg.png) center center no-repeat;
+    background-size: cover;
   }
 }
 
@@ -114,17 +118,36 @@
   }
 }
 
-hr {
-  margin-top: 4em;
-  margin-bottom: 4em;
-  width: 120px;
-  text-align: center;
-  border: 2px solid $color-base;
-}
-
 .work_section.no_margin.gif {
   figure {
     width: 360px;
     margin: 0 auto;
+  }
+}
+
+.work_section h2 {
+  font-family: $tf_serif;
+  margin-bottom: 0.5em;
+}
+
+.work_section.highlight {
+  background-color: #fcebeb;
+  max-width: 100%;
+
+  @include flex_height_display();
+  @include no_flex_display();
+
+  @include media_tablet_portrait() {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+}
+
+.special_paragraph {
+  font-size: 16pt;
+
+  @include media_tablet_portrait() {
+    font-size: 20pt;
+    margin-bottom: 2em;
   }
 }

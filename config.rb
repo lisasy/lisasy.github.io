@@ -1,5 +1,6 @@
 activate :aria_current
 activate :autoprefixer
+activate :directory_indexes
 activate :inline_svg
 
 set :css_dir, "assets/stylesheets"
