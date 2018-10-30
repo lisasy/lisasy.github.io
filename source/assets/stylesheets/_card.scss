@@ -31,6 +31,7 @@
 }
 
 .card_title {
+  font-family: $tf_serif;
   color: white;
   line-height: 1.25;
   margin-top: 0;
@@ -43,13 +44,11 @@
 }
 
 .card_nav_text {
+
   @include media_tablet_portrait() {
     visibility: hidden;
     font-weight: 800;
     display: block;
-  }
-  @include media_tablet_portrait() { 
-    // margin-top: 2em;
   }
 }
 
@@ -65,6 +64,10 @@
   }
 
   .card_subtitle {
+    color: #BBA6E4;
+  }
+
+  .card_nav_text {
     color: #BBA6E4;
   }
 }
@@ -83,6 +86,10 @@
   .card_subtitle {
     color: #133F96;
   }
+
+  .card_nav_text {
+    color: #133F96;
+  }
 }
 
 .set_c {
@@ -99,6 +106,10 @@
   .card_subtitle {
     color: #EB7A6A;
   }
+
+  .card_nav_text {
+    color: #EB7A6A;
+  }
 }
 
 .set_d {
@@ -113,6 +124,10 @@
   }
 
   .card_subtitle {
+    color: #F2E953;
+  }
+
+  .card_nav_text {
     color: #F2E953;
   }
 }

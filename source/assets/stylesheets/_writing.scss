@@ -7,8 +7,6 @@
 
 .article_container {
   max-width: 100%;
-  // padding-left: 1em;
-  // padding-right: 1em;
   margin: 0 0 1em;
 
   @include media_tablet_portrait() {
@@ -91,7 +89,7 @@
 
   .card_title {
     color: $color_base;
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: 800;
   }
 
