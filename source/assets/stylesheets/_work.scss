@@ -12,9 +12,9 @@
     margin-bottom: 1em;
 
     @include media_tablet_portrait() {
-      min-height: 75vh;
+      min-height: 65vh;
       margin-top: 1em;
-      margin-bottom: 160px;
+      margin-bottom: 64px;
     }
 
     .project_header_content {
@@ -27,23 +27,17 @@
       @include media_tablet_portrait() {
         margin: 0;
         padding: 2em;
-        position: absolute;
-        left: 2em;
-        right: 2em;
-        bottom: -160px;
+        position: relative;
+        bottom: -24vh;
       }
 
       @include media_tablet_landscape() {
-        left: 8em;
-        right: 8em;
-        bottom: -160px;
+        // bottom: -160px;
       }
 
       @include media_desktop() {
         padding: 3em;
-        left: 14em;
-        right: 14em;
-        bottom: -160px;
+        // bottom: -160px;
       }
 
       .project_sourceline,
@@ -63,6 +57,13 @@
 .project_container.content_warnings {
   .project_header {
     background: url(/assets/images/work/fb_content_warnings/header_bg.png) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.project_container.live_videos {
+  .project_header {
+    background: url(/assets/images/work/fb_reporting_live_videos/cover_header.png) center center no-repeat;
     background-size: cover;
   }
 }

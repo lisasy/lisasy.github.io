@@ -105,6 +105,8 @@ GEM
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
+    middleman-vcs-time (0.0.6)
+      middleman-core (~> 4.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     neat (3.0.0)
@@ -158,6 +160,7 @@ DEPENDENCIES
   middleman-inline_svg
   middleman-livereload (~> 3.4)
   middleman-minify-html (~> 3.4)
+  middleman-vcs-time
   neat (~> 3.0)
   redcarpet (~> 3.4)
   sass (~> 3.4)
