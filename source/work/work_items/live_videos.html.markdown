@@ -21,6 +21,12 @@ layout: "work_project"
       the product so that people can report objectionable, sensitive content
       that may arise from live video content.
     </p>
+    <p>
+      Compared to the existing reporting flow, this new one resulted in more
+      reportings, allowing Facebook was able to receive and take action on.
+      This enables Facebook to become a safer platform for people to be
+      their authentic selves.
+    </p>
   </div>
 </div>
 
