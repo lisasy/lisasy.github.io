@@ -11,12 +11,10 @@
     width: 100%;
     position: relative;
     display: flex;
-    // margin-bottom: 1em;
 
     @include media_tablet_portrait() {
       height: 560px;
       margin-top: 1em;
-      // margin-bottom: 4em;
     }
 
     .project_header_content {
@@ -32,8 +30,10 @@
 
       @include media_tablet_portrait() {
         padding: 2em;
-        position: relative;
-        bottom: -24vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         margin-bottom: 0;
       }
 
@@ -41,7 +41,7 @@
       }
 
       @include media_desktop() {
-        padding: 3em;
+        padding: 3em 3em 1em;
       }
 
       .project_sourceline,
@@ -65,15 +65,15 @@
   }
 }
 
-.project_header.work_section {
-  margin-bottom: 2em;
-}
-
 .project_container.live_videos {
   .project_header {
     background: url(/assets/images/work/fb_reporting_live_videos/cover_header.png) center center no-repeat;
     background-size: cover;
   }
+}
+
+.project_header.work_section {
+  margin-bottom: 2em;
 }
 
 .background_subline {
