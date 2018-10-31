@@ -99,3 +99,26 @@ $col_6: percentage(6/$columns); // 2 items per row
     width: 100%;
   }
 }
+
+
+.col {
+  .col_2of3 {
+    box-sizing: border-box;
+    width: 66%;
+  }
+  .col_1of3 {
+    box-sizing: border-box;
+    width: 33%;
+  }
+}
+
+.col_standard_col {
+  margin: 0 auto 2em;
+  @include media_tablet_landscape() {
+    width: 28rem;
+  }
+
+  @include media_desktop() {
+    width: 30rem;
+  }
+}

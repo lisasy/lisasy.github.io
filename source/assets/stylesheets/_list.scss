@@ -22,3 +22,21 @@
     margin-top: 0;
   }
 }
+
+.list_container_col {
+  @include media_tablet_portrait() {
+    display: flex;
+  }
+
+  .list_item {
+    @include media_tablet_portrait() {
+      display: block;
+      box-sizing: border-box;
+      margin-right: 2em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

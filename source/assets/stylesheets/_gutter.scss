@@ -41,3 +41,29 @@
     padding-right: 2em;
   }
 }
+
+.fl {
+  @include flex_display();
+}
+
+.fl_ai_ctr {
+  align-items: center;
+}
+
+.pd_rt_s {
+  padding-right: 2em;
+}
+
+.pd_lf_s {
+  padding-left: 2em;
+}
+
+.mg_dw_m {
+  margin-bottom: 4em;
+}
+
+// mrgn
+
+// pdng
+
+// top, rgt, btm, lft
